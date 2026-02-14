@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background: rgba(42, 32, 65);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 300px;
+            height: 500px;
+            border-radius: 5px;
+            background: rgba(35, 31, 57);
+            box-shadow: 0 0 25px 1px rgba(45, 194, 162, 0.8);
+
+
+
+            position: relative;
+        }
+
+        .asap {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px;
+
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: solid;
+            border-color: rgba(59, 87, 109);
+            border-width: 1px;
+            transition: transform 0.6s ease;
+        }
+
+        .asap:hover {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+
+
+        .name {
+            color: #9392ab;
+            position: absolute;
+            top: 33%;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            left: 42%;
+            scale: 130%;
+
+        }
+
+        .country {
+            color: #9392ab;
+            position: absolute;
+            top: 38%;
+            font-family: "Bellota Text", sans-serif;
+            left: 43%;
+            scale: 80%;
+        }
+
+        .me {
+            color: #9392ab;
+            position: absolute;
+            top: 47%;
+            font-family: "Bellota Text", sans-serif;
+            scale: 80%;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .btn {
+            position: absolute;
+            left: 22%;
+            top: 62%;
+            gap: 20px;
+        }
+
+        .follow {
+            background-color: #05becd;
+            border-radius: 3px;
+            border: solid #05becd;
+            height: 40px;
+            color: #055e66;
+            width: 90px;
+            border-width: 1px;
+        }
+
+        .message {
+            background-color: rgba(35, 31, 57);
+            border-radius: 3px;
+            border: solid #05becd;
+            height: 40px;
+            color: #05becd;
+            width: 90px;
+            border-width: 1px;
+        }
+
+        .mincon {
+            background-color: #1b1733;
+            border-radius: 5px;
+            height: 110px;
+            position: absolute;
+            width: 100%;
+            top: 400px;
+        }
+
+        .skills {
+            font-family: "Bellota Text", sans-serif;
+            padding: 5px;
+            color: aliceblue;
+        }
+
+        .da {
+            background-color: #1f1b36;
+            border: solid azure;
+            color: azure;
+            border-radius: 3px;
+            border-width: 1px;
+            font-family: "Bellota Text", sans-serif;
+            padding: 3px;
+        }
+
+        .gd {
+            position: absolute;
+            background-color: #1f1b36;
+            border: solid azure;
+            color: azure;
+            border-radius: 3px;
+            border-width: 1px;
+            font-family: "Bellota Text", sans-serif;
+            padding: 3px;
+            left: 80px;
+        }
+
+        .p {
+            position: absolute;
+            background-color: #1f1b36;
+            border: solid azure;
+            color: azure;
+            border-radius: 3px;
+            border-width: 1px;
+            font-family: "Bellota Text", sans-serif;
+            padding: 3px;
+            left: 190px;
+        }
+
+        .ta {
+            position: relative;
+            background-color: #1f1b36;
+            border: solid azure;
+            color: azure;
+            border-radius: 3px;
+            border-width: 1px;
+            font-family: "Bellota Text", sans-serif;
+            padding: 3px;
+            top: 35px;
+            right: 70px;
+        }
+
+        .tab {
+            position: relative;
+            left: 10px;
+            top: 5px;
+        }
+
+        .follow:active{
+            background: rgba(35, 31, 57);
+            cursor: pointer;
+        }
+
+        .message:active {
+            background: #05becd;
+            color: #055e66;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<div class="bg"></div>
+
+<body>
+    <div class="container">
+        <img src="ASAP.jpg" class="asap">
+        <h3 class="name">PRAVEEEN</h3>
+        <h3 class="country">INDIA</h3>
+        <h3 class="me">Digital Artist and a Photographer</h3>
+
+        <div class="btn">
+
+            <button class="follow">
+                Follow
+            </button>
+            <button class="message">
+                Message
+            </button>
+        </div>
+
+        <div class="mincon">
+
+            <div class="skills">Skills</div>
+            <div class="tab">
+                <button class="da">Digital Art</button>
+                <button class="gd">Graphic Design</button>
+                <button class="p">Photography</button>
+                <button class="ta">Traditional Art</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
